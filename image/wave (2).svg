@@ -1,0 +1,13 @@
+<svg width="1440.000000" height="320.000000" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip3_1772">
+			<rect id="wave (2)" width="1440.000000" height="320.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip3_1772)">
+		<path id="path" d="M0 96L60 96C120 96 240 96 360 128C480 160 600 224 720 218.7C840 213 960 139 1080 106.7C1200 75 1320 85 1380 90.7L1440 96L1440 320L1380 320C1320 320 1200 320 1080 320C960 320 840 320 720 320C600 320 480 320 360 320C240 320 120 320 60 320L0 320L0 96Z" fill="#C52B5D" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

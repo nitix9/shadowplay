@@ -1,1 +1,100 @@
 @import "tailwindcss";
+@theme{
+    --font-title:"Golos Text", "sans-serif";
+
+    --font-desc:"Montserrat", "sans-serif";
+
+    --font-date:"Golos Text","sans-serif";
+    --radius-menu:1.25rem;
+    --color-main:#CB2754;
+    --radius-footer:1.875rem;
+    --color-line:#212121;
+    --color-date:#C8C8C8;
+    --text-s:1rem;
+}
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@keyframes slideInOut {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%); /* Начинаем слева */
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0); /* Текст появляется и застывает */
+    }
+    100% {
+      opacity: 0;
+      overflow: hidden;
+      transform: translateX(100%); /* Текст уходит обратно вправо */
+    }
+  }
+  
+  /* Применение анимации с использованием Tailwind */
+  .animate-slideInOut {
+    animation: slideInOut 10s ease-in-out forwards; /* 6 секунд для всей анимации */
+  }
+@media (min-width: 46.5rem) {
+    .container {
+        max-width: 46.5rem;
+    }
+}
+@media (min-width: 64rem) {
+    .container {
+        max-width: 64rem;
+    }
+}
+@media (min-width: 86.25rem) {
+    .container {
+        max-width: 70.36rem;
+    }
+}
+@media (min-width: 120rem) {
+    .container {
+        max-width: 104.11rem;
+    }
+}
+.footer-cont{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 46.5rem) {
+    .footer-cont {
+        max-width: 46.5rem;
+    }
+}
+@media (min-width: 64rem) {
+    .footer-cont {
+        max-width: 64rem;
+    }
+}
+@media (min-width: 86.25rem) {
+    .footer-cont {
+        max-width: 69rem;
+    }
+}
+@media (min-width: 120rem) {
+    .footer-cont {
+        max-width: 104.11rem;
+    }
+}
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-30px); /* Или другое смещение */
+    }
+  }
+  
+  .animate-fadeOut {
+    animation: fadeOut 3s ease-out forwards; /* 3 секунды для анимации, плавное исчезновение */
+  }
