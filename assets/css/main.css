@@ -11,6 +11,10 @@
     --color-line:#212121;
     --color-date:#C8C8C8;
     --text-s:1rem;
+    --breakpoint-xs: 25rem;
+    --breakpoint-s: 23.75rem;
+    --breakpoint-m:33.75rem;
+    --breakpoint-2xs:18.75rem;
 }
 .container{
     width: 100%;
@@ -97,4 +101,33 @@
   
   .animate-fadeOut {
     animation: fadeOut 3s ease-out forwards; /* 3 секунды для анимации, плавное исчезновение */
+  }
+  @tailwind utilities;
+  
+  @layer utilities {
+    @keyframes move-left {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  
+    @keyframes move-right {
+      from {
+        transform: translateX(-50%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+  
+    .animate-left {
+      animation: move-left 25s linear infinite;
+    }
+  
+    .animate-right {
+      animation: move-right 25s linear infinite;
+    }
   }
